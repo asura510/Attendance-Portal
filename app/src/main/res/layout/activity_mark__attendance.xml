@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mark_Attendance">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_mark__attendance" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mark"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="left|bottom" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|bottom" />
+</android.support.design.widget.CoordinatorLayout>
